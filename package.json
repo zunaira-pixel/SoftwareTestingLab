@@ -1,0 +1,16 @@
+{
+  "name": "testplanpart2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=lcov",
+    "ci:test": "npm ci && npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
