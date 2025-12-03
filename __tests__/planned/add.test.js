@@ -1,4 +1,4 @@
-const add = require('../src/add');
+const add = require('../../src/add');
 
 describe('add', () => {
     test('adds two positive numbers', () => {

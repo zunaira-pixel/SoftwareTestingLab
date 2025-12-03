@@ -1,4 +1,4 @@
-const words = require('../src/words');
+const words = require('../../src/words');
 
 describe('words', () => {
     test('splits string into words', () => {

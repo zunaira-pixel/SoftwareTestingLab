@@ -1,4 +1,4 @@
-const eq = require('../src/eq');
+const eq = require('../../src/eq');
 
 describe('eq', () => {
     test('compares equal values', () => {

@@ -1,4 +1,4 @@
-const filter = require('../src/filter');
+const filter = require('../../src/filter');
 
 describe('filter', () => {
     test('filters array by predicate', () => {

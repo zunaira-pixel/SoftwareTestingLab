@@ -1,4 +1,4 @@
-const isEmpty = require('../src/isEmpty');
+const isEmpty = require('../../src/isEmpty');
 
 describe('isEmpty', () => {
     test('returns true for null', () => {

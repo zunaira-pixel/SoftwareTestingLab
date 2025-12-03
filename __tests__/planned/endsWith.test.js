@@ -1,4 +1,4 @@
-const endsWith = require('../src/endsWith');
+const endsWith = require('../../src/endsWith');
 
 describe('endsWith', () => {
     test('checks if string ends with target', () => {

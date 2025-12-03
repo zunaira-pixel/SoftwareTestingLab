@@ -1,4 +1,4 @@
-const get = require('../src/get');
+const get = require('../../src/get');
 
 describe('get', () => {
     const object = { a: { b: { c: 3 } } };

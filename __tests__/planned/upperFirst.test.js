@@ -1,4 +1,4 @@
-const upperFirst = require('../src/upperFirst');
+const upperFirst = require('../../src/upperFirst');
 
 describe('upperFirst', () => {
     test('uppercases first character', () => {

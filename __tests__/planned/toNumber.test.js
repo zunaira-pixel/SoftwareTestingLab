@@ -1,4 +1,4 @@
-const toNumber = require('../src/toNumber');
+const toNumber = require('../../src/toNumber');
 
 describe('toNumber', () => {
     test('returns number as is', () => {

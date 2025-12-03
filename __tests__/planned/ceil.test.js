@@ -1,4 +1,4 @@
-const ceil = require('../src/ceil');
+const ceil = require('../../src/ceil');
 
 describe('ceil', () => {
     test('rounds up to nearest integer', () => {
