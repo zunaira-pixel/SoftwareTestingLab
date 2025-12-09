@@ -12,6 +12,6 @@ describe('filter (ai_generated extra)', () => {
     test('handles sparse arrays', () => {
         const arr = [];
         arr[2] = 3;
-        expect(filter(arr, n => typeof n !== 'undefined')).toEqual([undefined, undefined, 3]);
+        expect(filter(arr, n => typeof n !== 'undefined')).toEqual([3]);
     });
 });
