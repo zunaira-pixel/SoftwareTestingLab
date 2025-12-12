@@ -6,17 +6,7 @@
  */
 function upperFirst(string) {
     if (!string) return '';
-    const first = string.charAt(0);
-    const upperFirstChar = first.toUpperCase();
-
-    // If uppercasing the first character expands into multiple characters
-    // (for example 'ß' -> 'SS'), avoid changing the string to prevent
-    // unexpected length/encoding differences and preserve original behavior.
-    if (upperFirstChar.length > first.length) {
-        return string;
-    }
-
-    return upperFirstChar + string.slice(1);
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 module.exports = upperFirst;

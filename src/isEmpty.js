@@ -9,15 +9,7 @@ function isEmpty(value) {
         return true;
     }
 
-    // Handle arrays, strings, objects with a splice (like arrays),
-    // and generic array-like objects that have a numeric `length` property
-    // (but are not functions).
-    if (
-        Array.isArray(value) ||
-        typeof value === 'string' ||
-        typeof value.splice === 'function' ||
-        (typeof value !== 'function' && typeof value.length === 'number')
-    ) {
+    if (Array.isArray(value) || typeof value === 'string' || typeof value.splice === 'function') {
         return value.length === 0;
     }
 

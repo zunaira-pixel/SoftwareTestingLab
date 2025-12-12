@@ -11,7 +11,7 @@ function get(object, path, defaultValue) {
 
     const pathArray = Array.isArray(path)
         ? path
-        : String(path).replace(/\[(\d+)\]/g, '.$1').split('.');
+        : path.replace(/\[(\d+)\]/g, '.$1').split('.');
 
     let result = object;
 

@@ -9,9 +9,6 @@
 function filter(collection, predicate) {
     if (!collection) return [];
 
-    // If predicate is not a function, treat it as no-op and return an empty array
-    if (typeof predicate !== 'function') return [];
-
     const result = [];
     const array = Array.isArray(collection) ? collection : Object.values(collection);
 

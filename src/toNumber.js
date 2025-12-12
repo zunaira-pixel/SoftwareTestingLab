@@ -26,15 +26,8 @@ function toNumber(value) {
 
     value = value.trim();
     const isBinary = /^0b[01]+$/i.test(value);
-    const isOctal = /^0o[0-7]+$/i.test(value);
-    const isHex = /^0x[0-9a-f]+$/i.test(value);
 
-    // Treat hex string literals as invalid for this implementation
-    if (isHex) {
-        return NaN;
-    }
-
-    return (isBinary || isOctal)
+    return (isBinary || /^0o[0-7]+$/i.test(value))
         ? parseInt(value.slice(2), isBinary ? 2 : 8)
         : +value;
 }

@@ -9,9 +9,7 @@
 function endsWith(string, target, position) {
     if (!string) return false;
 
-    // If a position is provided, clamp it to the string length so that
-    // positions larger than the string length are treated as the string end.
-    const length = position === undefined ? string.length : Math.min(position, string.length);
+    const length = position === undefined ? string.length : position;
     const end = length;
     const start = end - target.length;
 
